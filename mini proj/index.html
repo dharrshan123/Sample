@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://images.softwaresuggest.com/software_logo/insightlycrm-20250128123905.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <p class="head">insightly</p>
+        <ul>
+            <li><a href="https://www.insightly.com/crm/">Why insightly</a></li>
+            <li><a href="https://www.insightly.com/pricing-plans/?plan=crm">Pricing</a></li>
+            <li><a href="https://www.insightly.com/contact-us/">Customers</a></li>
+            <li><a href="https://www.insightly.com/blog/resources/">Resources</a></li>
+            <li class="jj"><a href=" https://login.insightly.com/User/Login?ReturnUrl=%2F">Login</a></li>
+            <button class="jk"> Try catch free</button>
+        </ul>
+    </nav>
+    <center>
+        <h1 style="color: white;position: relative;top: 30px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">The crm your teams will love</h1>
+        <p style="position: relative;top: 50px;font-size: 20px;color: white;">Go beyond transactions,connect with your cutomenrs,create unforgettable <br> experiences and align teams with crm built with you in mind</p><br><br><br><br><br>
+        <button style="color: white;background-color: transparent;border: 2px solid white;" id="demoBtn">Request a demo</button>
+    </center>
+
+    <!-- Dark Blue Section -->
+    <div class="subnav">
+        <ul class="subnav-links">
+            <li>Sales</li>
+            <li>Relationships</li>
+            <li>Projects</li>
+            <li>Features</li>
+            <li>Mobility</li>
+            <li>Integrations</li>
+            <li>Security</li>
+        </ul>
+    </div>
+
+    <!-- White Icon Feature Section -->
+    <section class="features">
+        <h2>Sell smarter. Sell with confidence.</h2>
+        <p>Reach your customers at the right time with the right message to build personalized brand experiences, stand out from your competitors, and sell smarter.</p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5996/5996461.png" alt="Lead routing" />
+                <h3>Lead routing</h3>
+                <p>Insightly tracks the most relevant lead information, including a rich activity timeline of marketing campaign source, emails, phone calls, meetings, and tasks. Automatically route leads to the right person, in real time, so sales reps follow up on leads while they’re still hot.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/891/891175.png" alt="Workflow automation" />
+                <h3>Workflow automation</h3>
+                <p>Create complex, multi-step business processes with Insightly workflow automation. Send email alerts, create or update records, generate tasks for others when opportunities are won, and even execute custom business logic to sync external systems from SAP, Oracle, and others.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Send, track, save emails" />
+                <h3>Send, track, and save emails</h3>
+                <p>Create and send emails from within Insightly in a few clicks, or send out bulk emails to a list of contacts or leads with ease. Insightly tracks email delivery to customers in real-time and monitors open and click statistics for all email templates—it even notifies you when emails are opened.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orange Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <img src="https://homeguruworld.com/wp-content/uploads/2021/05/Banner-1-e1632383732604.jpg" alt="Video preview" />
+        </div>
+        <div class="video-text">
+            <h2>Do more, better, faster</h2>
+            <p>Increase your teams' productivity by automating and orchestrating workflow tasks, sending emails, updating records, executing custom code, firing webhooks, and much more.</p>
+            <button class="watch-btn">▶ WATCH THE VIDEO</button>
+        </div>
+    </section>
+
+    <script>
+       
+        const demoBtn = document.getElementById("demoBtn");
+        demoBtn.addEventListener("click", () => {
+            alert("Thank you! We will contact you soon for a demo.");
+        });
+
+       
+        const videoBtn = document.querySelector(".watch-btn");
+        videoBtn.addEventListener("click", () => {
+            alert("Video playback feature coming soon!");
+        });
+
+    
+        const subnavItems = document.querySelectorAll(".subnav-links li");
+        subnavItems.forEach(item => {
+            item.addEventListener("mouseenter", () => {
+                console.log(`Hovered on ${item.textContent}`);
+            });
+        });
+
+        window.addEventListener("load", () => {
+            console.log("Welcome to Insightly - CRM your teams will love!");
+        });
+    </script>
+
+</body>
+</html>
